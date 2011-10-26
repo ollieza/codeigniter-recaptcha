@@ -4,10 +4,10 @@
 <title>reCaptcha</title>
 </head>
 <body>
-<?= form_open('recaptchademo') ?>
-<?= form_error('recaptcha_response_field') ?>
-<?= $recaptcha ?>
-<?= form_submit('recaptchasubmit','Check Recaptcha') ?>
-<?= form_close() ?>
+<?php echo form_open('recaptchademo'); ?>
+<?php echo form_error('recaptcha_response_field'); ?>
+<?php echo $recaptcha; ?>
+<?php echo form_submit('recaptchasubmit', 'Check Recaptcha'); ?>
+<?php echo form_close(); ?>
 </body>
 </html>
