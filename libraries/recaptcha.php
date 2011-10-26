@@ -101,11 +101,11 @@ class Recaptcha
     	$response = $this->_http_post(
       								$this->_rConfig['RECAPTCHA_VERIFY_SERVER'],
       								"/recaptcha/api/verify",
-    	  							array (
-    	  	  							'privatekey' => $this->_rConfig['private'],
-    	  	  							'remoteip' => $remoteip,
-    	  	  							'challenge' => $challenge,
-    	  	  							'response' => $response
+    	  							array(
+    	  	  							'privatekey' 	=> $this->_rConfig['private'],
+    	  	  							'remoteip' 		=> $remoteip,
+    	  	  							'challenge' 	=> $challenge,
+    	  	  							'response' 		=> $response
     	  								) + $extra_params
     									);
 		
@@ -162,10 +162,10 @@ class Recaptcha
     	}
 
     	$html_data = array(
-      					'server' => $server,
-      					'key' => $this->_rConfig['public'],
-      					'theme' => $this->_rConfig['theme'],
-      					'lang' => $lang,
+      					'server' 	=> $server,
+      					'key' 		=> $this->_rConfig['public'],
+      					'theme' 	=> $this->_rConfig['theme'],
+      					'lang' 		=> $lang,
       					// Appends The error display for the reCaptcha to the url
       					'errorpart' => $errorpart
     					);
