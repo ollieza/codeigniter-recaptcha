@@ -1,0 +1,20 @@
+reCaptcha - Production ready - CodeIgniter 2.1.0
+================================================
+
+This CodeIgniter library handles calling the reCAPTCHA service  (http://www.google.com/recaptcha)
+
+Modification and fixes of the library by Jon Trelfa <jtrelfa@gmail.com> (http://codeigniter.com/wiki/ReCAPTCHA) which appeared to have 'stalled'.
+
+Change list:
+------------
+
+- Deprecated eregi() fix
+- Added file or db logging config option
+- Added logging individual Paypal ipn fields
+- Included PayPal IPN field db schema
+
+Extra
+-----
+
+If you'd like to request changes, report bug fixes, or contact
+the developer of this library, please email <orattue[at]toomanytabs.com>
