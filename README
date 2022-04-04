@@ -12,9 +12,3 @@ Change list:
 - Added file or db logging config option
 - Added logging individual Paypal ipn fields
 - Included PayPal IPN field db schema
-
-Extra
------
-
-If you'd like to request changes, report bug fixes, or contact
-the developer of this library, please email <orattue[at]toomanytabs.com>
