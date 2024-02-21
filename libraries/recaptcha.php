@@ -237,6 +237,10 @@ class Recaptcha
 		if (FALSE == ($fs = @fsockopen($host, $port, $errno, $errstr, 10))) 
     	{
       		log_message('error', $this->_CI->lang->line('recaptcha_socket_fail'));
+			return array(
+				'',
+				"false\n" . $this->_CI->lang->line('recaptcha_socket_fail')
+			);
     	}
     
     	fwrite($fs, $http_request);
